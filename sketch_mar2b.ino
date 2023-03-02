@@ -1,38 +1,33 @@
-//prelude and lib imports
-
 /**
-* using attribute to determine code compilation
-* the attribute start with `#if 1 (or #if 0)` to mean 
-*if true and if false respectively
+* HELLO WORLD Example 
+* 
+*--------------------------------------------------------------------
+* A typically Arduino code must have two functions
+* void setup() and void loop()
 *
-* the syntax go thus
-* #if 0
+* both function are required to run a program 
+* one thing is one can put the setup() in one file and put the void lop in another file 
 *
-* ...
-* my code goes here
-* ....
+*-----------------------------------------------------------------
 *
-* #endif
+* the code below will brint hello world to the serial monitor
 */
 
-// Using truthy and falsy state ment to compile code 
-#if 1
-
 void setup() {
-  // init
-Serial.begin(9600);
-Serial.println("\"Hello Engineer Hamziey\n\tmy name is Opeoluwa Adeoye I'm a senior fullstack developer\n\tAt Amazon."); 
-Serial.println("Hello, World!");
-  // put your setup code here, to run once:
-  // introduction_to_arduino
+  /**
+  * the Serial.begin() takes a numeric argument 
+  * the numeric argument is the `badu rate` whis is the rate at which is the computational speed of  the board
+  */
+  Serial.begin(9600);
+  Serial.println("Hello World");// print to the standard output
+  // put your setup code here, to run once
+
+  // Ctr + Shift + M to open the serial monitor
+  // Ctrl + U to run the code
+
 }
 
 void loop() {
-  // looop and exec this block
-
-
   // put your main code here, to run repeatedly:
 
 }
-
-#endif
