@@ -3,8 +3,8 @@
 * typically, the data will be read from a sensor 
 * more on this later
 */
-bool isHouseOnFire() {
-  return true;
+int isHouseOnFire() {
+  return 1;
 }
 
 

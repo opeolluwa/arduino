@@ -1,4 +1,4 @@
-#include "functions.ino"
+#include "functions.c"
 
 // An hytopthtical fire alarm and management system to explore data types
 
