@@ -8,8 +8,8 @@ void setup() {
 
 void loop() {
   bool fireDetected = isHouseOnFire();
-  if (fireDectected) {
-    println("Fire Detected Help");
+  if (fireDetected) {
+    printf("Fire Detected Help");
     turnOnTheAlarm();
     turnOnSprinkler();
     callEmergencyService();
@@ -31,18 +31,18 @@ bool isHouseOnFire() {
 // a function to turn on the sprinkler
 // since the function wont return a value, it is best made void
 void turnOnSprinkler() {
-  println("Sprinklers turned on");
+  printf("Sprinklers turned on");
 }
 
 
 // a functin to turn on the alarm
-void tunrOnTheAlarm() {
-  println("Sounding the alarm");
+void turnOnTheAlarm() {
+  printf("Sounding the alarm");
 }
 
 
 
 // call emercency service
-void callEmercencyService(){
-  println("Calling 911");
+void callEmergencyService() {
+  printf("Calling 911");
 }
