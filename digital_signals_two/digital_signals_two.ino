@@ -5,7 +5,7 @@ const int  PIN_3 = 4;
 const int  PIN_4 = 5;
 
 //define the avialbe pins
-const int AVAILABLE_PINS[] = {
+ int AVAILABLE_PINS[] = {
   PIN_1, PIN_2, PIN_3, PIN_4
 };
 
@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for (int counter = 0; counter < 4; counter++) {
+  for (int counter = 0; counter <= 5; counter++) {
     // if (AVAILABLE_PINS[counter] == pinNumber) {
       digitalWrite(AVAILABLE_PINS[counter], HIGH);
         delay(1000);
@@ -27,7 +27,7 @@ void loop() {
       digitalWrite(AVAILABLE_PINS[counter], LOW);
     // }
   }
-  delay(1000);
+  // delay(1000);
 }
 
 
