@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for (int counter = 0; counter <= 5; counter++) {
+  for (int counter = 0; counter < sizeof(AVAILABLE_PINS); counter++) {
     // if (AVAILABLE_PINS[counter] == pinNumber) {
       digitalWrite(AVAILABLE_PINS[counter], HIGH);
         delay(1000);
