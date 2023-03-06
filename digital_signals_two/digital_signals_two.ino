@@ -19,26 +19,27 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for (int counter = 0; counter < sizeof(AVAILABLE_PINS); counter++) {
-    // if (AVAILABLE_PINS[counter] == pinNumber) {
-      digitalWrite(AVAILABLE_PINS[counter], HIGH);
-        delay(1000);
-    // } else {
-      digitalWrite(AVAILABLE_PINS[counter], LOW);
-    // }
-  }
+ changePinMode();
   // delay(1000);
+  // changePinModeReverse();
 }
 
 
 // a function to change the pin mode
-// void changrPinMode(int PinNumber) {
-//   for (int counter = 0; counter < AVAILABLE_PINS.len; counter++) {
-//     if (AVAILABLE_PINS[counter] == pinNumber) {
-//       digitalWrite(pinNumber, HIGH);
-//     } else {
+void changePinMode() {
+  for (int counter = 0; counter < sizeof(AVAILABLE_PINS); counter++) {
+      digitalWrite(AVAILABLE_PINS[counter], HIGH);
+        delay(1000);
+      digitalWrite(AVAILABLE_PINS[counter], LOW);
+  }
+}
+
+//print in reverse
+// void changePinModeReverse() {
+//   for (int counter = sizeof(AVAILABLE_PINS0); counter !=0 ; counter--) {
+//       digitalWrite(AVAILABLE_PINS[counter], HIGH);
+//         delay(1000);
 //       digitalWrite(AVAILABLE_PINS[counter], LOW);
-//     }
+      
 //   }
-//   delay(1000);
 // }
